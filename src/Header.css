@@ -1,0 +1,26 @@
+header {
+    text-align: center;
+    font-family: "Orbitron";
+    color: white;
+    fill: white;
+    margin: 50px;
+    font-size: 25px;
+    opacity: 0;
+    animation: 0.25s slidefade 0.5s forwards;
+}
+
+
+@media (max-width: 800px) {
+    header{
+        margin: 20px;
+    }
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+	}
+    0% {
+        transform: translatey(20px);
+    }
+}

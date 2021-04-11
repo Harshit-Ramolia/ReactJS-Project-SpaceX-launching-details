@@ -1,0 +1,176 @@
+.box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  padding: 20px 15px;
+  justify-content: space-around;
+  animation: 0.35s slidefade 0.65s forwards;
+  opacity: 0;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translatey(20px);
+  }
+}
+
+.box h3 {
+  font-family: "roboto mono";
+}
+
+#filter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#datalist {
+  padding-top: 10px;
+}
+
+/* Tried to provide better css, but had to refer package input for numbers which could handel lots of things easily, but restricted to only some changes in css */
+label input {
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  appearance: textfield;
+  transition: all 100ms ease;
+  width: 200px;
+  font-size: 20px;
+}
+label {
+  font-size: 20px;
+}
+
+/* copied the code for checkbox */
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+/* https://www.kirupa.com/html5/sliding_background_effect_on_link_hover.htm */
+
+.button {
+  padding: 10px 80px;
+  /* background-color: #fff; */
+  border: 2px solid #000;
+  font-family: "roboto mono";
+
+  --initialTextColor: #000;
+  --slideTextColor: #fff;
+
+  --initialBgColor: #fff;
+  --slideBgColor: #000;
+
+  color: var(--initialTextColor);
+
+  background-image: linear-gradient(
+    90deg,
+    var(--initialBgColor) 0%,
+    var(--initialBgColor) 50%,
+    var(--slideBgColor) 50%,
+    var(--slideBgColor) 100%
+  );
+  background-size: 200%;
+  transition: background-position 0.15s ease, color linear;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--slideTextColor);
+  background-position: 100%;
+}
+
+@media (max-width: 800px) {
+  label {
+    flex-basis: 100%;
+    margin: 10px 0;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 10px 30px;
+  }
+  .container {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  #filter {
+    padding: 10px;
+  }
+}

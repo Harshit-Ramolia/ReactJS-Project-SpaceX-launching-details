@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# A small project with ReactJS and API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a front end application which calls API to fetch data of Spacex Programs, and display it. <br>
+This also includes some filters like launch year, successful launch and successful land. <br>
+I prefered not to use any UI libraries, we could easily with few just lines in css, create similar effects. <br>
 
-## Available Scripts
+Heroku Link : 
+<br>
 
-In the project directory, you can run:
+## Stack Details
+HTML, CSS, Javascript (inevitable) <br>
+React JS <br>
+JQuery (could avoid by using XHR or Axios) <br>
 
-### `npm start`
+### Extra Packages :
+react-numeric-input (proved very helpful for numric input)
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Approach
+First started traditionaly without reactjs to make some design. This helped me alot to make sepereate componet and functions is react.
+Then when felt ok with design, I tried Ajax approach to call API and place it through DOM manipulation using Jquery. But I soon realised, it will be very tedious. At this moment I had realised the value of ReactJS.<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I setuped react through npm, and made some changes here and there in template and make it useful for me. Then I converted each component from HTML to react. Then figured out how I should use states and props for proper flow of data. After designing props and states. I created API calling. Then added it to App states and rendered it into HTML using list and comp component/function.<br>
 
-### `npm test`
+This had left only one work of creating form of filters. While creating the form, I faced many problems in number inputs, which got solver using react-numeric-input npm package.<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This concludes the whole approach. To understande the code you could read the code. I have commented the code to make it readable.<br>
 
-### `npm run build`
+## Snapshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+PC Screen
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![img1](snapshots/img1.PNG) 
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![img2](snapshots/img2.PNG)
+<br>
 
-### `npm run eject`
+![img3](snapshots/img3.PNG)
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![img4](snapshots/img4.PNG)
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mobile Screen
+<br>
+![img5](snapshots/img5.JPEG)

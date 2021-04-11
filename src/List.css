@@ -1,0 +1,118 @@
+ul {
+  list-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid li {
+  background-color: #fff;
+  flex-basis: 90%;
+  margin: 2px 0;
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 15px;
+  transition: all 200ms ease;
+  align-items: center;
+  opacity: 0;
+}
+
+.grid li:nth-child(even){
+  animation: 0.5s  list 1s forwards;
+}
+
+.grid li:nth-child(odd){
+  animation: 0.25s list 1s forwards;
+}
+
+@keyframes list {
+	100% {
+		opacity: 1;
+	}
+}
+
+.grid li:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  fill: #fff;
+}
+
+.rocket div:nth-child(1) {
+  text-align: center;
+}
+
+.launchdetails div:nth-child(1) {
+  text-align: center;
+}
+
+.grid .bold {
+  font-family: "roboto mono";
+}
+
+.grid .flight_number {
+  flex-basis: 15%;
+}
+
+.grid .mission_name {
+  flex-basis: 25%;
+}
+
+.grid .success {
+  flex-basis: 18%;
+}
+
+.grid .rocket {
+  flex-basis: 18%;
+}
+
+.grid .launchdetails {
+  flex-basis: 18%;
+}
+
+@media (max-width: 800px) {
+  .grid li {
+    flex-direction: column;
+  }
+
+  .grid li div {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .grid .flight_number {
+    flex-basis: 100%;
+  }
+
+  .grid .mission_name {
+    flex-basis: 100%;
+  }
+
+  .grid .success {
+    flex-basis: 100%;
+  }
+
+  .grid .rocket {
+    flex-basis: 100%;
+  }
+
+  .grid .launchdetails {
+    flex-basis: 100%;
+  }
+
+  #datalist {
+    padding: 50px 20px;
+  }
+}
