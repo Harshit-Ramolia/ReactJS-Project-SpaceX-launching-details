@@ -31,18 +31,18 @@ This concludes the whole approach. To understande the code you could read the co
 PC Screen
 <br>
 
-![img1](snapshots/img1.PNG) 
+![img1](https://github.com/Harshit-Ramolia/ReactJS-Project-SpaceX-launching-details/blob/main/snapshots/img1.png) 
 <br>
 
-![img2](snapshots/img2.PNG)
+![img2](https://github.com/Harshit-Ramolia/ReactJS-Project-SpaceX-launching-details/blob/main/snapshots/img2.png)
 <br>
 
-![img3](snapshots/img3.PNG)
+![img3](https://github.com/Harshit-Ramolia/ReactJS-Project-SpaceX-launching-details/blob/main/snapshots/img3.png)
 <br>
 
-![img4](snapshots/img4.PNG)
+![img4](https://github.com/Harshit-Ramolia/ReactJS-Project-SpaceX-launching-details/blob/main/snapshots/img4.png)
 <br>
 
 Mobile Screen
 <br>
-![img5](snapshots/img5.JPEG)
+![img5](https://github.com/Harshit-Ramolia/ReactJS-Project-SpaceX-launching-details/blob/main/snapshots/img5.png)
