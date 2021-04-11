@@ -45,4 +45,4 @@ PC Screen
 
 Mobile Screen
 <br>
-![img5](https://github.com/Harshit-Ramolia/ReactJS-Project-SpaceX-launching-details/blob/main/snapshots/img5.png)
+![img5](https://github.com/Harshit-Ramolia/ReactJS-Project-SpaceX-launching-details/blob/main/snapshots/img5.jpeg)
